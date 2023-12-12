@@ -95,23 +95,87 @@
     }
 
     //methods --- alert, prompt, confirm
-    alert("Beutiful");
+    // alert("Beutiful");
 
-    var data = confirm("Are you home now?");
-    if(data){
-        alert("You're good!");
+    // var data = confirm("Are you home now?");
+    // if(data){
+    //     alert("You're good!");
+    // }
+
+    // var data1 = prompt("What's your age?");
+    // console.log(data1);
+
+
+    // var person = null;
+    // if(confirm("Are you sure?")){
+    //     person = prompt("Enter your name!");
+    //     alert("Hi, " + person)
+    // } else {
+    //     alert("You pressed <<Cancel>>");
+    // }
+
+
+    //functions
+    function info(word){
+        console.log(word + "!");
     }
 
-    var data1 = prompt("What's your age?");
-    console.log(data1);
+    function summa(a, b){
+        var res = a + b;
+        info(res);
+    }
+    summa(5, 7);
 
 
-    var person = null;
-    if(confirm("Are you sure?")){
-        person = prompt("Enter your name!");
-        alert("Hi, " + person)
-    } else {
-        alert("You pressed <<Cancel>>");
+
+    function arrsumma(arr){
+        var sum = 0;
+
+        for(var i = 0; i < arr.length; i++){
+            sum += arr[i];
+        }
+
+        return sum;
+    }
+    var array = [6, 8, 1];
+    
+    var result = arrsumma(array);
+    console.log("Result: " + result);
+
+
+
+
+    var num = 10;
+
+    function info(){
+        var num = 20;
+        console.log(num);
     }
 
+    info();
 
+    console.log(num);
+
+    
+
+    //Events and event handler
+    var counter = 0;
+
+    function onClickButton(element){
+        counter++;
+        element.innerHTML = "You pressed on button: " + counter;
+        // element.style.background = "red";
+        // element.style.color = "blue";
+
+        element.style.cssText = "border-radius: 5px; border: 0; font-size: 20px";
+    }
+
+    /* onmouseover, oninput, onload */
+
+
+    function onInput(el){
+        if(el.value == "Hello")
+            alert("you too");
+
+        console.log(el.value);    
+    }
