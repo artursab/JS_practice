@@ -24,7 +24,7 @@
 
 
 
-    //Conditional statements
+//Conditional statements
     var number = 15;
     if( number > 5){
         console.log("OK");
@@ -43,7 +43,7 @@
     }
 
 
-    //arrays
+//arrays
     var arr = [5, true, "words", 5.6];
     arr[3] = "word";
     console.log(arr.length);
@@ -56,7 +56,7 @@
 
     matrix[1][0] = false;
 
-    //loops
+//loops
     for(var i = 100; i > 5; i /= 2){
         console.log(i);
     }
@@ -85,7 +85,7 @@
         console.log(i);
     }
 
-    //array loop
+//array loop
     var arr1 = [4 ,5 ,6 ,7 , 8, "word"];
 
     for(var i = 0; i < arr.length; i++){
@@ -115,7 +115,7 @@
     // }
 
 
-    //functions
+//functions
     function info(word){
         console.log(word + "!");
     }
@@ -158,24 +158,80 @@
 
     
 
-    //Events and event handler
-    var counter = 0;
+//Events and event handler
+    // var counter = 0;
 
-    function onClickButton(element){
-        counter++;
-        element.innerHTML = "You pressed on button: " + counter;
-        // element.style.background = "red";
-        // element.style.color = "blue";
+    // function onClickButton(element){
+    //     counter++;
+    //     element.innerHTML = "You pressed on button: " + counter;
+    //     // element.style.background = "red";
+    //     // element.style.color = "blue";
 
-        element.style.cssText = "border-radius: 5px; border: 0; font-size: 20px";
-    }
+    //     element.style.cssText = "border-radius: 5px; border: 0; font-size: 20px";
+    // }
 
     /* onmouseover, oninput, onload */
 
 
-    function onInput(el){
-        if(el.value == "Hello")
-            alert("you too");
+    // function onInput(el){
+    //     if(el.value == "Hello")
+    //         alert("you too");
 
-        console.log(el.value);    
-    }
+    //     console.log(el.value);    
+    // }
+
+
+//HTML management and form processing
+
+    // var text = document.getElementById('text');
+    // text.title = "New Text";
+    // console.log(text.title);
+
+    // text.style.color = "red";
+    // text.style.backgroundColor = "blue";
+
+    // text.innerHTML = "New<br>string";
+
+    // document.getElementById('text').style.color = "white";
+
+    // var spans = document.getElementsByTagName('span');
+
+    // var spans = document.getElementsByClassName('simple-text');
+
+    // for(var i = 0; i < spans.length; i++){
+    //     console.log(spans[i].innerHTML);
+    // }
+
+
+
+    // document.getElementById('main-form').addEventListener("click", checkForm);
+
+    // function checkForm(el){
+    //     event.preventDefault();
+    //     var el = document.getElementById('main-form');
+
+    //     //var name = document.getElementById('name').value;
+    //     var name = el.name.value;
+    //     var pass = el.pass.value;
+    //     var repass = el.repass.value;
+    //     var state = el.state.value;
+
+    //     if(name = ""|| pass == "" || state == "")
+    //         fail = "Enter all fields";
+    //     else if(name.length <= 1 || name.length > 50)
+    //         fail = "Enter correct name";
+    //     else if(pass != repass)
+    //         fail = "Passwords must be the same";
+    //     else if(pass.split("&").length > 1)
+    //         fail = "Uncorrect password";
+
+    //     if(fail != "") {
+    //         document.getElementById('error').innerHTML = fail;
+    //     } else {
+    //     alert("All fields inputed correctly");
+    //     window.location = ' https://itproger.com ';
+    //     }
+
+    //         }
+    
+
