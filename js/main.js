@@ -282,9 +282,34 @@
 
     /* special func of array */
 
-    var arr = [5, 6, 7, 8];
-    // console.log(arr.join("|||"));
+    // var arr = [5, 6, 7, 8];
+    // // console.log(arr.join("|||"));
 
-    var str = arr.reverse().join(", ");
+    // var str = arr.reverse().join(", ");
 
-    console.log(str.split(", "));
+    // console.log(str.split(", "));
+
+
+
+    /* class and objects */ 
+    class Person{
+        constructor(name, age, happiness){
+            this.name = name;
+            this.age = age;
+            this.happiness = happiness;
+        }
+
+        info(){
+            console.log("Person: " + this.name + ". Age: " + this.age);
+        }
+    }
+
+    var alex = new Person('Alex', 45, true);
+    var bob = new Person('Bob', 56, false);
+
+    alex.name = 'alex2';
+    alex.info();
+    bob.info();
+
+    // console.log(alex.age);
+    // console.log(bob.name);
