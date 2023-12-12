@@ -235,3 +235,36 @@
     //         }
     
 
+
+
+
+
+
+    /* interval */ 
+    // setInterval(my_func, 1000);
+
+    // var counert = 0;
+    // function my_func(){
+    //      counter++;
+    //      console.log("Counter: " + counert);
+
+    //      if(counter == 3){
+    //         clearInterval(id);
+    //      }
+    // }
+
+    // setInterval(function(){
+    //     counert++;
+    //     console.log("Sec: " + counter);
+    // }, 1000);
+
+
+    /* Timer */ 
+    // setTimeout(my_func, 1000);
+
+    // function my_func(){
+    //     console.log("Timer is working!";)
+    // }
+
+
+    
