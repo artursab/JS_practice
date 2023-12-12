@@ -267,4 +267,24 @@
     // }
 
 
-    
+
+    /* Objects */ 
+    // var date = new Date();
+
+    // console.log(date.getFullYear());
+    // console.log(date.getFullMonths() + 1);
+    // console.log(date.getHours());
+
+    // date.setHours(23);
+    // console.log("Time: " + date.getHours() + ":" + date.getMinutes());
+
+
+
+    /* special func of array */
+
+    var arr = [5, 6, 7, 8];
+    // console.log(arr.join("|||"));
+
+    var str = arr.reverse().join(", ");
+
+    console.log(str.split(", "));
